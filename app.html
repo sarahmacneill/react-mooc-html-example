@@ -1,0 +1,57 @@
+<!-- This is an example HTML file to show the structure of the React Ice Cream Site (https://github.com/sarahmacneill/react-mooc). This file is for illustration purposes only, the JS and CSS for this project are not included so this doesn't have the full functionality -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./app.js"></script>
+        <link rel="stylesheet" href="./my-app.css"/>
+    </head>
+    <body>
+        <div className="App">
+            <div className="navbar">>
+                <a className="navbar-item" href="#gallery">Gallery</a>
+                <a className="navbar-item" href="#flavours">Flavours</a>
+                <a className="navbar-item" href="#shops">Shops</a>
+            </div>
+            <header>
+                <h1>Sarah's Ice Cream React Site</h1>
+            </header>
+            <div id="gallery" className="pad1">
+                <h2>Ice Cream Gallery</h2>
+                <div className="images">
+                    <img width="30%" src="https://www.cuisinart.co.uk/on/demandware.static/-/Sites-uk-cuisinart-Library/default/dw85481aea/images/recipes/Strawberry-Ice-Cream.jpg" />
+                    <img width="30%" src="https://www.thespruceeats.com/thmb/E69KpId_2UzDmLKqj_cqBTsyykw=/3135x3135/smart/filters:no_upscale()/GettyImages-90053856-588b7aff5f9b5874ee534b04.jpg" />
+                    <img width="30%" src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216744.jpg?output-format=auto&output-quality=auto" />
+                </div>
+            </div>
+            <div id="flavours" className="page-break pad1">
+                <h2>Ice Cream Flavours</h2>
+                <label>
+                    Pick your favorite ice cream flavour:
+                    <select value="getValue()" onChange="handleChange()">
+                        <option value="grapefruit">Grapefruit</option>
+                        <option value="lime">Lime</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="mango">Mango</option>
+                    </select>
+                </label>
+                <p>Your flavour of choice is: <strong>flavour</strong></p>
+            </div>
+            <div id="shops" className="page-break pad1">
+                <h2>Ice Cream Shops</h2>
+                <p>Use this as a place to note down your favourite places to get ice cream:</p>
+                <ul>
+                    <li>Janetta's Gelataria</li>
+                    <li>Dairy Queen</li>
+                    <li>Luca's Gelato</li>
+                </ul>
+
+                <form onSubmit="handleSubmit()">
+                    <label>Add a place:</label>
+                    <input value="getPlace()" onChange="handlePlaceChange()" />
+                    <button type="submit">+ add</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
